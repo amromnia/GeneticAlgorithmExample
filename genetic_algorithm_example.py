@@ -25,9 +25,6 @@ def selection(sorted_population, percentage=0.5):
                 break
     return selected
 
-
-
-
 def crossover(individual1, individual2):
     n = len(individual1)
     return individual1[:n//2] + individual2[n//2:]
