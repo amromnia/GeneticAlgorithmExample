@@ -75,7 +75,8 @@ def run_genetic_algorithm(max_iter_count=100, population_size=10, gene_size=10, 
         print("Mutated Population: ")
         print('\n'.join([' '.join(map(str, individual)) for individual in mutated_population]))
         print("-----------------")
-    return max(mutated_population, key=lambda x: x[0])
+        population = mutated_population
+    return max(population, key=lambda x: x[0])
 
 
 def main():
